@@ -5,6 +5,9 @@
   color: white;
   font-family: 'Open Sans', sans-serif;
 }
+body {
+  background-color: black;
+}
 
 .top-header {
   background-image: url(/images/background.jpg);
@@ -13,7 +16,7 @@
 }
 .container {
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.65);
 }
 .language-picker {
   background-color: rgba(0, 0, 0, 0.338);
@@ -82,7 +85,6 @@ h1 {
   justify-content: center;
   align-items: center;
   padding: 0px 11rem;
-  border: 1px solid blue;
 }
 
 .form-sign-in {
@@ -95,7 +97,7 @@ h1 {
 .form-sign-in input {
   background-color: rgba(0, 0, 0, 0.384);
   border: none;
-  width: 25rem;
+  flex-grow: 1;
   padding: 10px 10px;
 
 }
@@ -121,4 +123,41 @@ h1 {
   position: absolute;
   right: 10px;
   top: 16px;
+}
+
+hr {
+  border: 5px solid #232323;
+}
+
+.section-2 {
+  
+  height: 502px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0px 150px;
+}
+.section-2-content h1{
+  text-align: left;
+}
+.section-2-content p{
+  font-size: 1.5rem;
+  padding-right: 1.5rem;
+  margin-top: 1rem; 
+}
+.section-2-img {
+  position: relative;
+}
+.section-2 img {
+  height: 340px;
+  width: 450px; 
+}
+
+.section-2 video {
+  /* height: 330px; */
+  width: 330px;
+  position: absolute;
+  left: 58px;
+  top: 70px;
+  z-index: -1;
 }
