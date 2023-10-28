@@ -3,7 +3,7 @@
   padding: 0px;
   box-sizing: border-box;
   color: white;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 body {
   background-color: black;
@@ -24,7 +24,8 @@ body {
   border-radius: 4px;
 }
 
-.language, .drop-down {
+.language,
+.drop-down {
   position: absolute;
 }
 .drop-down {
@@ -46,7 +47,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding:20px 100px;
+  padding: 20px 100px;
   margin: 0px 50px;
 }
 
@@ -99,7 +100,6 @@ h1 {
   border: none;
   flex-grow: 1;
   padding: 10px 10px;
-
 }
 
 .form-sign-in button {
@@ -109,12 +109,11 @@ h1 {
   padding-left: 1.5rem;
 }
 
-.form-sign-in button p{
+.form-sign-in button p {
   font-weight: 600;
   font-size: 1.5rem;
   padding: 0px;
 }
-
 
 .button-section {
   position: relative;
@@ -129,28 +128,30 @@ hr {
   border: 5px solid #232323;
 }
 
-.section-2 {
-  
-  height: 502px;
+.section {
   display: flex;
+  height: 502px;
+}
+
+.section-2 {
   align-items: center;
   justify-content: center;
   margin: 0px 150px;
 }
-.section-2-content h1{
+h1 {
   text-align: left;
 }
-.section-2-content p{
+.section-2-content p {
   font-size: 1.5rem;
   padding-right: 1.5rem;
-  margin-top: 1rem; 
+  margin-top: 1rem;
 }
 .section-2-img {
   position: relative;
 }
 .section-2 img {
   height: 340px;
-  width: 450px; 
+  width: 450px;
 }
 
 .section-2 video {
@@ -160,4 +161,46 @@ hr {
   left: 58px;
   top: 70px;
   z-index: -1;
+}
+
+.section-3 {
+  justify-content: center;
+  align-items: flex-start;
+  padding: 4rem 7rem;
+  margin-left: 3rem;
+}
+
+.section-3-left-side {
+  position: relative;
+}
+
+.section-3-mobile-top {
+  display: flex;
+  background-color: black;
+  border: 2px solid #5a5a5a;
+  border-radius: 10px;
+  width: 16.5rem;
+  height: 6.5rem;
+  padding: 0px 10px;
+  justify-content: space-around;
+  align-items: center;
+  position: absolute;
+  bottom: 29px;
+  left: 104px;
+}
+
+.section-3-mobile-top p {
+  font-size: 0.8rem;
+  color: #0071eb; 
+}
+
+.section-3-right-side {
+  padding-top: 2rem;
+  width: 50rem;
+}
+
+.section-3-right-side p {
+  margin-top: 0.8rem;
+  font-size: 1.5rem;
+  text-align: left;
 }
