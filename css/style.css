@@ -207,11 +207,10 @@ h1 {
 }
 
 .section-4-container {
-
   width: 100%;
   display: flex;
   align-items: center;
-  padding: 10rem 8rem; 
+  padding: 10rem 8rem;
 }
 
 .section-4 .right-side-container {
@@ -227,5 +226,5 @@ h1 {
 }
 
 .section-4-left-side p {
-  padding-right: 3rem;  
+  padding-right: 3rem;
 }
