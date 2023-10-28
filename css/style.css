@@ -10,7 +10,7 @@ body {
 }
 
 .top-header {
-  background-image: url(/images/background.jpg);
+  background-image: url(../images/background.jpg);
   background-size: cover;
   height: 100vh;
 }
@@ -191,7 +191,7 @@ h1 {
 
 .section-3-mobile-top p {
   font-size: 0.8rem;
-  color: #0071eb; 
+  color: #0071eb;
 }
 
 .section-3-right-side {
@@ -199,8 +199,33 @@ h1 {
   width: 50rem;
 }
 
-.section-3-right-side p {
+.section-3-right-side,
+.section-4-left-side p {
   margin-top: 0.8rem;
   font-size: 1.5rem;
   text-align: left;
+}
+
+.section-4-container {
+
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 10rem 8rem; 
+}
+
+.section-4 .right-side-container {
+  position: relative;
+}
+
+.section-4 .right-side-container video {
+  position: absolute;
+  left: 100px;
+  z-index: -1;
+  width: 18rem;
+  bottom: 160px;
+}
+
+.section-4-left-side p {
+  padding-right: 3rem;  
 }
