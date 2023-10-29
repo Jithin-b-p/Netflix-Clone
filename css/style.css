@@ -11,7 +11,9 @@ body {
 
 .top-header {
   background-image: url(../images/background.jpg);
-  background-size: cover;
+  background-size: 1720px;
+  background-position-x: -175px;
+  background-position-y: -250px;
   height: 100vh;
 }
 .container {
@@ -20,8 +22,9 @@ body {
 }
 .language-picker {
   background-color: rgba(0, 0, 0, 0.338);
-  padding: 10px 40px;
+  padding: 5px 30px;
   border-radius: 4px;
+  font-size: 1rem;
 }
 
 .language,
@@ -29,7 +32,7 @@ body {
   position: absolute;
 }
 .drop-down {
-  top: 7px;
+  top: 5.5px;
   right: -2px;
 }
 
@@ -85,19 +88,20 @@ h1 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 0px 11rem;
+  padding: 0px 7rem;
 }
 
 .form-sign-in {
   display: flex;
   justify-content: center;
-  gap: 5px;
+  gap: 10px;
   height: 56px;
 }
 
 .form-sign-in input {
   background-color: rgba(0, 0, 0, 0.384);
-  border: none;
+  border: 1px solid #636263;
+  border-radius: 0.3rem;
   flex-grow: 1;
   padding: 10px 10px;
 }
@@ -155,7 +159,6 @@ h1 {
 }
 
 .section-2 video {
-  /* height: 330px; */
   width: 330px;
   position: absolute;
   left: 58px;
@@ -233,5 +236,68 @@ h1 {
 .section-5-container {
   display: flex;
   align-items: center;
-  padding: 0px 8rem;
+  padding: 0px 9rem;
+}
+
+.section-5-right-side {
+  padding-left: 1rem;
+  padding-right: 3rem;
+}
+
+.section-5-right-side p {
+  padding-right: 2rem;
+}
+
+.section-6 {
+  height: 950px;
+}
+
+.section-6-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  gap: 2rem;
+}
+
+.section-6-questions {
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+.section-6 .question-section {
+  width: 100%;
+  height: 5.3rem;
+  background-color: #2d2d2d;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+}
+.question-section .question {
+  font-size: 1.5rem;
+}
+
+.section-6 .question-section:hover {
+  background-color: #414141;
+  cursor: pointer;
+}
+
+.add {
+  font-size: 3rem;
+  font-weight: lighter;
+}
+
+.section-6-heading p {
+  margin-bottom: 1.5rem;
+  font-size: 1.25rem;
+}
+
+.section-6-form {
+  margin-top: 2rem;
+}
+.section-6-form .form-sign-in {
+  padding: 0 1.5rem;
 }
