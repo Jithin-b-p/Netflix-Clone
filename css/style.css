@@ -41,9 +41,12 @@ body {
   top: 6px;
 }
 
+.content h1 {
+  text-align: center;
+}
+
 .dropdown-container {
   position: relative;
-  /* border: 1px solid blue; */
 }
 
 .navbar {
@@ -300,4 +303,52 @@ h1 {
 }
 .section-6-form .form-sign-in {
   padding: 0 1.5rem;
+}
+
+.footer-container {
+  height: 400px;
+  padding: 4rem 2rem;
+  font-size: 0.85rem;
+}
+.footer-container p {
+  padding-left: 8rem;
+  color: #b3b3b3;
+}
+
+table {
+  border-spacing: 8rem 1rem;
+}
+
+td,
+.number {
+  color: #b3b3b3;
+  text-decoration: underline;
+}
+
+td:hover,
+.number:hover,
+.footer-section p:hover {
+  cursor: pointer;
+}
+
+.footer-dropdown-container {
+  margin-left: 8rem;
+  position: relative;
+  height: 3rem;
+}
+.footer-language,
+.footer-drop-down {
+  position: absolute;
+}
+.footer-language {
+  left: 8px;
+  top: 3px;
+}
+
+.footer-drop-down {
+  right: 933.5px;
+  top: 5.5px;
+}
+.signature {
+  margin-top: 1rem;
 }
