@@ -4,32 +4,30 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Netflix India - Watch TV Shows Online, Watch Movies Online</title>
+    <title>Netflix Clone</title>
+    <link rel="stylesheet" href="./css/style.css" />
     <link
-      rel="shortcut icon"
-      href="./images/icon/nficon2023.ico"
-      type="image/x-icon"
-    />
-    <link
-      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700;800&display=swap"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <header class="top-header">
-      <div class="container">
-        <div class="navbar">
+    <header class="position-relative">
+      <nav class="navbar navbar-expand">
+        <div class="container">
           <svg
-            width="150"
-            height="50"
-            fill="#e50914"
             viewBox="0 0 111 30"
             version="1.1"
             xmlns="http://www.w3.org/2000/svg"
@@ -44,229 +42,149 @@
               ></path>
             </g>
           </svg>
-          <div class="navbar-right-section">
-            <div class="dropdown-container">
-              <span class="language material-icons"> translate </span>
-              <select class="language-picker">
-                <option>English</option>
-                <option>Hindi</option>
-              </select>
-              <span class="drop-down material-icons"> arrow_drop_down </span>
-            </div>
-            <button class="button-style">Sign In</button>
+          <div
+            class="collapse navbar-collapse justify-content-end"
+            id="navbarSupportedContent"
+          >
+            <button type="button" class="btn-style btn-signin">Sign In</button>
           </div>
         </div>
-        <div class="content">
-          <h1>Laughter. Tears. Thrills. Find it all on Netflix.</h1>
-          <p>Endless entertainment starts at just ₹ 149. Cancel anytime.</p>
-          <div class="form">
-            <p>
-              Ready to watch? Enter your email to create or restart your
-              membership.
-            </p>
-            <div class="form-sign-in">
-              <input type="text" placeholder="Email Address" />
-              <div class="button-section">
-                <button class="button-style"><p>Get Started</p></button>
-                <span class="material-icons right-arrow"> chevron_right </span>
-              </div>
-            </div>
+      </nav>
+      <section
+        class="hero container-fluid h-75 d-flex flex-column align-items-center justify-content-center px-4 py-5"
+      >
+        <h1 class="hero-title text-white text-center fw-bold px-2">
+          Laughter. Tears. Thrills. Find it all on Netflix.
+        </h1>
+        <p class="hero-first-p text-white text-center">
+          Endless entertainment starts at just ₹ 149. Cancel anytime.
+        </p>
+        <p class="hero-second-p text-white text-center px-2">
+          Ready to watch? Enter your email to create or restart your membership.
+        </p>
+        <form
+          action="#"
+          class="container d-flex gap-3 flex-column justify-content-center align-items-center flex-md-row"
+        >
+          <div class="form-floating col-auto">
+            <input
+              type="email"
+              class="form-control"
+              id="floatingInput"
+              placeholder="name@example.com"
+            />
+            <label for="floatingInput">Email address</label>
           </div>
-        </div>
-      </div>
+          <div class="col-auto position-relative">
+            <button type="submit" class="btn-style get-started-btn fw-bold">
+              Get Started
+            </button>
+            <span
+              class="arrow-icon material-icons text-white position-absolute"
+            >
+              chevron_right
+            </span>
+          </div>
+        </form>
+      </section>
     </header>
-    <hr />
+    <div class="container-fluid seperator"></div>
     <main>
-      <div class="section section-2">
-        <div class="section-2-content">
-          <h1>Enjoy on your TV</h1>
-          <p>
+      <section
+        class="section-1 py-5 container d-flex flex-column flex-lg-row align-items-center"
+      >
+        <div
+          class="section-1-left container text-center text-lg-start text-white px-2 pt-3"
+        >
+          <h1 class="fw-bolder">Enjoy on your TV</h1>
+          <p class="fs-5 lh-sm">
             Watch on smart TVs, PlayStation, Xbox, Chromecast, Apple TV, Blu-ray
             players and more.
           </p>
         </div>
-        <div class="section-2-img">
-          <img src="./images/tv.png" alt="tv screen" />
-          <video src="./videos/section-1-video.m4v" muted loop autoplay></video>
+        <div class="section-1-right position-relative w-100 px-3">
+          <img src="./images/tv.png" alt="tv" />
+          <video
+            class="position-absolute"
+            src="./videos/section-1-video.m4v"
+            muted
+            autoplay
+            loop
+          ></video>
         </div>
-      </div>
-      <hr />
-      <div class="section section-3">
-        <div class="section-3-left-side">
-          <img
-            src="./images/mobile-0819.jpg"
-            width="472"
-            height="354"
-            alt="mobile-screen"
-          />
-          <div class="section-3-mobile-top">
-            <img
-              src="./images/boxshot.png"
-              width="57"
-              height="80"
-              alt="mini-movie-icon"
-            />
-            <div>
-              <h4>Stanger Things</h4>
-              <p>Downloading...</p>
-            </div>
-            <span class="material-icons"> download </span>
-          </div>
+      </section>
+      <div class="container-fluid seperator"></div>
+      <section
+        class="container-fluid section-2 py-5 container d-flex flex-column flex-lg-row-reverse align-items-center"
+      >
+        <div
+          class="container-fluid section-2-right text-center text-lg-start text-white pt-3"
+        >
+          <h1 class="fw-bolder px-3">Download your shows to watch offline</h1>
+          <p class="fs-6 lh-sm">
+            Save your favourites easily and always have something to watch.
+          </p>
         </div>
-        <div class="section-3-right-side">
-          <h1>Download your shows to watch offline</h1>
-          <p>Save your favourites easily and always have something to watch.</p>
-        </div>
-      </div>
-      <hr />
-      <div class="section section-4">
-        <div class="section-4-container">
-          <div class="section-4-left-side">
-            <h1>Watch everywhere</h1>
-            <p>
-              Stream unlimited movies and TV shows on your phone, tablet,
-              laptop, and TV.
-            </p>
-          </div>
-          <div class="section-4-right-side">
-            <div class="right-side-container">
-              <img
-                src="./images/device-pile-in.png"
-                height="358"
-                alt="movie shots"
-              />
-              <video
-                src="./videos/section-4-video.m4v"
-                muted
-                loop
-                autoplay
-              ></video>
-            </div>
-          </div>
-        </div>
-      </div>
-      <hr />
-      <div class="section secion-5">
-        <div class="section-5-container">
-          <div class="section-5-left-side">
-            <img
-              src="./images/children-section.png"
-              height="354"
-              alt="children-section"
-            />
-          </div>
-          <div class="section-5-right-side">
-            <h1>Create profiles for kids</h1>
-            <p>
-              Send children on adventures with their favourite characters in a
-              space made just for them—free with your membership.
-            </p>
-          </div>
-        </div>
-      </div>
-      <hr />
-      <div class="section-6">
-        <div class="section-6-container">
-          <div class="section-6-heading">
-            <h1>Frequently Asked Questions</h1>
-          </div>
-          <div class="section-6-questions">
-            <div class="question-section">
-              <div class="question"><p>What is Netflix?</p></div>
-              <div class="plus-icon">
-                <span class="add material-icons"> add </span>
+        <div class="container section-2-left position-relative">
+          <img class="w-100" src="images/mobile-0819.jpg" alt="mobile screen" />
+          <div
+            class="container mobile-top d-flex justify-content-between align-items-center px-2 py-2 position-absolute"
+          >
+            <div class="movie-poster-title d-flex gap-2 align-items-center">
+              <img src="images/boxshot.png" alt="poster" />
+              <div class="movie-title">
+                <h6 class="text-white mb-0">Stranger Things</h6>
+                <p class="fs-6 fw-light mb-0">Downloading..</p>
               </div>
             </div>
-            <div class="question-section">
-              <div class="question"><p>How much does Netflix cost?</p></div>
-              <div class="plus-icon">
-                <span class="add material-icons"> add </span>
-              </div>
-            </div>
-            <div class="question-section">
-              <div class="question"><p>Where can I watch?</p></div>
-              <div class="plus-icon">
-                <span class="add material-icons"> add </span>
-              </div>
-            </div>
-            <div class="question-section">
-              <div class="question"><p>How do I cancel?</p></div>
-              <div class="plus-icon">
-                <span class="add material-icons"> add </span>
-              </div>
-            </div>
-            <div class="question-section">
-              <div class="question"><p>What can I watch on Netflix?</p></div>
-              <div class="plus-icon">
-                <span class="add material-icons"> add </span>
-              </div>
-            </div>
-            <div class="question-section">
-              <div class="question"><p>Is Netflix good for kids?</p></div>
-              <div class="plus-icon">
-                <span class="add material-icons"> add </span>
-              </div>
-            </div>
-          </div>
-          <div class="section-6-form">
-            <div class="section-6-heading">
-              <p>
-                Ready to watch? Enter your email to create or restart your
-                membership.
-              </p>
-            </div>
-            <div class="form-sign-in">
-              <input type="text" placeholder="Email Address" />
-              <div class="button-section">
-                <button class="button-style"><p>Get Started</p></button>
-                <span class="material-icons right-arrow"> chevron_right </span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <hr />
-      <footer>
-        <div class="footer-container">
-          <p>Questions? Call <span class="number">000-800-919-1694</span></p>
-          <table>
-            <tr>
-              <td>FAQ</td>
-              <td>Help Centre</td>
-              <td>Account</td>
-              <td>Media Centre</td>
-            </tr>
-            <tr>
-              <td>Investor Relations</td>
-              <td>Jobs</td>
-              <td>Ways to Watch</td>
-              <td>Terms of Use</td>
-            </tr>
-            <tr>
-              <td>Privacy</td>
-              <td>Cookie Preferences</td>
-              <td>Corporate Information</td>
-              <td>Contact Us</td>
-            </tr>
-            <tr>
-              <td>Speed Tsest</td>
-              <td>Legal Notices</td>
-              <td>Only on Netflix</td>
-            </tr>
-          </table>
-          <div class="footer-dropdown-container">
-            <span class="footer-language material-icons"> translate </span>
-            <select class="language-picker">
-              <option>English</option>
-              <option>Hindi</option>
-            </select>
-            <span class="footer-drop-down material-icons">
-              arrow_drop_down
+            <span class="download material-icons text-white fs-1">
+              download
             </span>
           </div>
-          <p class="signature">Netflix India</p>
         </div>
-      </footer>
+      </section>
+      <div class="container-fluid seperator"></div>
+      <section
+        class="container section-3 d-flex flex-column text-center flex-lg-row text-lg-start py-5"
+      >
+        <div class="section-3-left text-white px-2 pt-3">
+          <h1 class="fw-bolder">Watch everywhere</h1>
+          <p class="fs-6 lh-sm px-3">
+            Stream unlimited movies and TV shows on your phone, tablet, laptop,
+            and TV.
+          </p>
+        </div>
+        <div class="section-3-right position-relative px-3">
+          <img class="w-100" src="./images/device-pile-in.png" alt="devices" />
+          <video
+            class="position-absolute w-100"
+            src="./videos/section-4-video.m4v"
+            muted
+            autoplay
+            loop
+          ></video>
+        </div>
+      </section>
+      <div class="container-fluid seperator"></div>
+      <section class="container section-4 text-white text-center py-4">
+        <div class="container section-4-left pt-4">
+          <h1 class="fw-bolder">Create profiles for kids</h1>
+          <p class="px-3 lh-sm">
+            Send children on adventures with their favourite characters in a
+            space made just for them—free with your membership.
+          </p>
+        </div>
+        <div class="section-4-right">
+          <img class="w-100" src="./images/children-section.png" alt="netflix-children" />
+        </div>
+      </section>
+      <div class="container-fluid seperator"></div>
     </main>
+    <script src="" async defer></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
